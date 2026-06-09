@@ -13,19 +13,6 @@ body {
     padding: 40px;
 }
 
-h1 {
-    font-size: 90px;
-    font-weight: 600;
-    letter-spacing: -4px;
-    margin-bottom: 20px;
-}
-
-.subtitle {
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 14px;
-    color: #666;
-}
 .topbar {
     display: flex;
     justify-content: space-between;
@@ -40,99 +27,12 @@ h1 {
     margin-bottom: 40px;
 }
 
-
-nav {
-    display: flex;
-    gap: 40px;
-    margin-top: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #111;
-    text-transform: uppercase;
-    font-size: 13px;
-    letter-spacing: 2px;
-}
-.hero-grid {
-    margin-top: 80px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-}
-.project {
-    background: #d9d9d9;
-    border-radius: 0;
-    overflow: hidden;
-    position: relative;
-}
-
-.project.large {
-    height: 520px;
-}
-
-.project-content {
-    position: absolute;
-    bottom: 40px;
-    left: 40px;
-}
-
-.project-content h2 {
-    font-size: 48px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-.project-content p,
-.year {
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}.project.half {
-    height: 420px;
-}
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    background: #f8f8f6;
-    color: #111;
-    padding: 40px;
-}
-
-h1 {
-    font-size: 90px;
-    font-weight: 600;
-    letter-spacing: -4px;
-    margin-bottom: 20px;
-}
-
 .subtitle {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 14px;
     color: #666;
 }
-.topbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.logo {
-    font-size: 76px;
-    font-weight: 600;
-    letter-spacing: -4px;
-    line-height: 1;
-    margin-bottom: 40px;
-}
-
 
 nav {
     display: flex;
@@ -147,49 +47,28 @@ nav a {
     font-size: 13px;
     letter-spacing: 2px;
 }
+
 .hero-grid {
     margin-top: 80px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
 }
+
 .project {
-    background: #d9d9d9;
-    border-radius: 0;
-    overflow: hidden;
-    position: relative;
-}
-
-.project.large {
-    height: 520px;
-}
-
-.project-content {
-    position: absolute;
-    bottom: 40px;
-    left: 40px;
-}
-
-.project-content h2 {
-    font-size: 48px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-.project-content p,
-.year {
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}.project.half {
     height: 420px;
+    position: relative;
+    overflow: hidden;
+    background: #d9d9d9;
 }
+
 .project::before {
     content: "";
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, #3b3b37, #b7afa3);
     transition: transform 0.8s ease;
+    z-index: 0;
 }
 
 .project:nth-child(2)::before {
@@ -203,28 +82,6 @@ nav a {
     background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.05));
     z-index: 1;
 }
-.project-content {
-    color: white;
-    z-index: 2;
-}
-
-.project:hover::before {
-    transform: scale(1.20);
-}
-.project:hover {
-    background: red;
-}
-
-.project:nth-child(2)::before {
-    background: linear-gradient(135deg, #151515, #6f7478);
-}
-
-.project::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.55), rgba(0,0,0,0.05));
-}
 
 .project-content {
     position: absolute;
@@ -234,7 +91,19 @@ nav a {
     z-index: 2;
 }
 
-.project:hover::before {
-    transform: scale(1.20);
+.project-content h2 {
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 10px;
 }
 
+.project-content p,
+.year {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.project:hover::before {
+    transform: scale(1.12);
+}
