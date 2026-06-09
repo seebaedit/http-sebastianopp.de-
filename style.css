@@ -116,5 +116,5 @@ nav a {
 }
 
 .project:hover::before {
-    transform: scale(1.03);
+    transform: scale(1.20);
 }
