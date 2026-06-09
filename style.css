@@ -54,7 +54,9 @@ nav a {
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "hero1 hero2"
+        "zeit ard"
         "zeit ard";
+    grid-auto-rows: 260px;
     gap: 8px;
 }
 .hero1 {
@@ -130,6 +132,4 @@ nav a {
 .project:hover::before {
     transform: scale(1.12);
 }
-.project.small {
-    height: 260px;
-}
+
