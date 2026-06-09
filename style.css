@@ -51,11 +51,11 @@ nav a {
 .hero-grid {
     margin-top: 80px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.05fr 0.82fr 0.82fr 1.05fr;
     grid-template-areas:
-        "hero1 hero2"
-        "zeit ard"
-        "zeit ard";
+        "hero1 hero1 hero2 hero2"
+        "zeit  ard   ard   samsung"
+        "zeit  vice  allianz samsung";
     grid-auto-rows: 260px;
     gap: 8px;
 }
@@ -73,6 +73,17 @@ nav a {
 
 .ard {
     grid-area: ard;
+}
+.vice {
+    grid-area: vice;
+}
+
+.allianz {
+    grid-area: allianz;
+}
+
+.samsung {
+    grid-area: samsung;
 }
 .project {
     height: 420px;
