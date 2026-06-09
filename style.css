@@ -56,7 +56,7 @@ nav a {
         "hero1 hero1 hero2 hero2"
         "zeit  ard   ard   samsung"
         "zeit  vice  allianz samsung";
-    grid-template-rows: 360px 180px 180px;
+    grid-template-rows: 480px 240px 240px;
     gap: 8px;
 }
 .hero1 {
