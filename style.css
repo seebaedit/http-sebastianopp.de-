@@ -66,7 +66,13 @@ nav a {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, #3b3b37, #b7afa3);
+    background: repeating-linear-gradient(
+    45deg,
+    #111 0px,
+    #111 20px,
+    #aaa 20px,
+    #aaa 40px
+);
     transition: transform 0.8s ease;
     z-index: 0;
 }
