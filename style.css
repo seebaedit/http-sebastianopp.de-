@@ -54,3 +54,36 @@ nav a {
     font-size: 13px;
     letter-spacing: 2px;
 }
+.hero-grid {
+    margin-top: 80px;
+}
+
+.project {
+    background: #d9d9d9;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.project.large {
+    height: 520px;
+}
+
+.project-content {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.project-content h2 {
+    font-size: 48px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.project-content p,
+.year {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
