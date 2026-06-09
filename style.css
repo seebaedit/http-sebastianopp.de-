@@ -49,14 +49,14 @@ nav a {
 }
 
 .hero-grid {
-    margin-top: 80px;
+    margin-top: 56px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "hero1 hero1 hero2 hero2"
         "zeit  ard   ard   samsung"
         "zeit  vice  allianz samsung";
-    grid-template-rows: 480px 240px 240px;
+    grid-template-rows: 520px 260px 260px;
     gap: 8px;
 }
 .hero1 {
