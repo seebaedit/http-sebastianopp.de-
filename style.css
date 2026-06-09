@@ -69,7 +69,6 @@ nav a {
 
 .zeit {
     grid-area: zeit;
-    margin-top: 30px;
 }
 
 .ard {
@@ -85,7 +84,6 @@ nav a {
 
 .samsung {
     grid-area: samsung;
-    margin-top: 30px;
 }
 .project {
     position: relative;
